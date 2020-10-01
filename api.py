@@ -8,7 +8,6 @@ import base64, io
 app = Flask(__name__)
 app.secret_key = 'hello'
 
-
 @app.route('/')
 def home():
 	return render_template('home.html', title = "Home")
